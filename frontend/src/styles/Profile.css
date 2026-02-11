@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
+
+.profile-page {
+  min-height: 100vh;
+  background: radial-gradient(circle at 20% 20%, rgba(102, 126, 234, 0.18), transparent 55%),
+    radial-gradient(circle at 80% 10%, rgba(118, 75, 162, 0.15), transparent 50%),
+    #f5f7fa;
+  font-family: 'DM Sans', 'Segoe UI', sans-serif;
+  color: #1f2330;
+}
+
+.profile-nav {
+  background: white;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.profile-brand-link {
+  display: inline-block;
+  margin: 0;
+  color: #5c6cff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  letter-spacing: -0.02em;
+}
+
+.profile-brand-link:hover {
+  color: #4a5ad6;
+}
+
+.profile-brand-link:focus {
+  outline: 2px solid #5c6cff;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.profile-brand span {
+  display: inline-block;
+  margin-top: 4px;
+  color: #6a7185;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+.profile-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.profile-link {
+  color: #4a4f69;
+  font-weight: 600;
+  padding: 9px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(92, 108, 255, 0.2);
+  background: rgba(92, 108, 255, 0.08);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.profile-link:hover {
+  color: #2a2f46;
+  border-color: rgba(92, 108, 255, 0.6);
+  background: rgba(92, 108, 255, 0.14);
+  transform: translateY(-1px);
+}
+
+.profile-link:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(92, 108, 255, 0.1);
+}
+
+.profile-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 48px 20px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.profile-card {
+  background: white;
+  border-radius: 18px;
+  padding: 28px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 24px;
+  align-items: center;
+  box-shadow: 0 6px 16px rgba(10, 14, 46, 0.08);
+  border: 1px solid rgba(92, 108, 255, 0.1);
+}
+
+.profile-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.9), rgba(118, 75, 162, 0.9));
+  color: white;
+  font-weight: 700;
+  font-size: 1.4rem;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 12px 22px rgba(102, 126, 234, 0.35);
+}
+
+.profile-identity h1 {
+  font-size: 2rem;
+  margin-bottom: 6px;
+}
+
+.profile-identity p {
+  color: #6a7185;
+  font-weight: 500;
+}
+
+.profile-status {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: flex-end;
+}
+
+.status-pill {
+  background: rgba(45, 190, 124, 0.12);
+  color: #1e8f5f;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+}
+
+.status-label {
+  color: #6a7185;
+  font-weight: 600;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.profile-panel {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 6px 16px rgba(10, 14, 46, 0.08);
+  border: 1px solid rgba(92, 108, 255, 0.1);
+}
+
+.profile-panel h3 {
+  margin-bottom: 16px;
+  font-size: 1.25rem;
+  color: #1f2330;
+  font-weight: 600;
+}
+
+.profile-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(92, 108, 255, 0.08);
+  gap: 10px;
+}
+
+.profile-row:last-child {
+  border-bottom: none;
+}
+
+.profile-label {
+  color: #6a7185;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.profile-value {
+  color: #1f2330;
+  font-weight: 600;
+  text-align: right;
+}
+
+.profile-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.profile-cta p {
+  color: #5b6172;
+  max-width: 520px;
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+  .profile-card {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .profile-status {
+    align-items: center;
+  }
+
+  .profile-cta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 640px) {
+  .profile-nav {
+    flex-direction: column;
+    gap: 14px;
+    text-align: center;
+  }
+
+  .profile-actions {
+    flex-direction: column;
+  }
+
+  .profile-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profile-value {
+    text-align: left;
+  }
+}
